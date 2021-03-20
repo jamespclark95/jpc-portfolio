@@ -1,0 +1,363 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'quicksand';
+}
+
+:root {
+    --gradient: linear-gradient(0deg, rgba(30,117,86,1) 0%, rgba(1,74,89,1) 100%);
+    --all-caps: uppercase;
+}
+
+/* TOP HALF SECTION STYLING */
+
+header {
+    height: auto;
+    background: var(--gradient);
+    padding-top: 1em;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 0rem;
+    background: url(./images/profile\ picture.jpg) rgba(41, 41, 41, 0.2);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.03, 1.03);
+    border-radius: 20%;
+  }
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding: 1em 0em 0em 0em;
+    margin: 0em;
+    font-size: 2rem;
+    text-transform: var(--all-caps);
+}
+
+nav {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0em;
+    margin: 0em;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    padding: 2em;
+    text-decoration: none;
+    line-height: 4px;
+    font-weight: 200;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(220, 229, 255);
+    transform: scale(1.1);
+}
+
+/* ~~MY WORK~~ SECTION STYLING */
+
+
+/* ~~MY WORK~~ FLEX CONTAINER STYLING */
+
+.work-flex-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: .5em;
+    flex-wrap: wrap;
+}
+
+p.card-title {
+    color: rgb(241, 241, 241);
+    background-color: rgba(0, 0, 0, 0.637);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transform: var(--all-caps);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+}
+
+.card-title a:visited {
+    color: rgb(241, 241, 241);
+}
+
+.left-flex-container p {
+    text-decoration: none;
+}
+
+.left-flex-container:hover .card-title a {
+    color: rgb(177, 177, 177);
+}
+
+.left-flex-container:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+  }
+
+  .flex-item:hover .card-title a {
+    color: rgb(177, 177, 177);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 900;
+    text-transform: var(--all-caps);
+    font-size: 2.5rem;
+}
+
+
+/* ~~MY WORK~~ LEFT FLEX SECTION STYLING */
+
+.my-work-section {
+    padding-bottom: 2rem;
+}
+
+.left-flex-container {
+    width: 35vw;
+    height: 45vh;
+    border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 12px 1px rgba(77,77,77,0.3);
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/15/18/13/bathroom-4130000_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ~~MY WORK~~ RIGHT FLEX SECTION STYLING */
+
+.right-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-item {
+    border: 1px;
+    margin: 1em 2em 1em 2em;
+    border: 1px solid #1C6EA4;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    height: 19vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 12px 1px rgba(77,77,77,0.3);
+}
+
+.flex-item:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+  }
+  .flex-item:hover .card-title {
+    color: #1C6EA4;
+}
+
+/* IMAGE BACKGROUNDS */
+
+.flex-item.flex-1 {
+    background: url(https://cdn.pixabay.com/photo/2017/08/08/09/06/search-engine-2610773_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-item.flex-2 {
+    background: url(https://cdn.pixabay.com/photo/2016/09/23/08/28/code-1689066_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-item.flex-3 {
+    background: url(https://cdn.pixabay.com/photo/2017/01/11/19/56/cheese-1972744_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-item.flex-4 {
+    background: url(https://pbs.twimg.com/profile_images/1124418991240310784/Tg7Mrqk2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ~~ABOUT/CONTACT~~ SECTION STYLING */
+
+.about-me-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-contact ul {
+    list-style: none;
+    padding: 0rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--gradient);
+    padding: 5%;
+    width: 50%;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about-me p {
+    margin: auto;
+    line-height: 2rem;
+    color: honeydew;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.about-me h3 {
+    color: honeydew;
+}
+
+.about-me ul {
+    color: honeydew;
+    line-height: 3rem;
+}
+
+.contact-me {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-me h3 {
+    text-align: start;
+}
+.about-list-item {
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.contact-title {
+    font-weight: 800;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-info li {
+    font-size: 1rem;
+}
+
+
+
+
+
+/* RESPONSIVE STYLING */
+
+@media screen and (max-width: 1020px) {
+    .work-flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-item {
+        width: 95%;
+        margin: 1em 0em 1em 0em;
+        height: 15vh;
+    }
+    .left-flex-container {
+        width: 95%;
+        height: 20vh;
+        margin-top: .7rem;
+    }
+    br {
+        display: none;
+    }
+    .right-flex-container {
+        width: 100%;
+    }
+    .flex-item:hover {
+        transform: none;
+      }
+    .left-flex-container:hover {
+        transform: none;
+    }
+    .my-work {
+        margin: 3rem, 0rem, .5rem, 0rem;
+    }
+    .about-me-contact {
+        flex-direction: column;
+  }
+  .about-me {
+      width: 100%;
+      padding: 0em;
+      height: 100vh;
+  }
+  .about-me p {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  .about-me ul {
+      padding-left: 1em;
+  }
+  .contact-me {
+      padding: 1em;
+      height: 100vh;
+  }
+}
