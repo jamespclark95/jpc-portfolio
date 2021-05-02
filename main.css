@@ -94,16 +94,14 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-p.card-title {
+.card-title {
     color: rgb(241, 241, 241);
     background-color: rgba(0, 0, 0, 0.637);
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transform: var(--all-caps);
     padding: 12px;
     border-radius: 20px;
@@ -118,6 +116,10 @@ p.card-title {
     color: rgb(241, 241, 241);
 }
 
+.card-title:hover {
+    color: rgb(0, 110, 255);
+}
+
 .left-flex-container p {
     text-decoration: none;
 }
@@ -129,10 +131,6 @@ p.card-title {
 .left-flex-container:hover {
     transform: scale(1.03, 1.03);
     cursor: pointer;
-  }
-
-  .flex-item:hover .card-title a {
-    color: rgb(177, 177, 177);
 }
 
 h2 {
@@ -159,10 +157,11 @@ h2 {
     margin-bottom: 1em;
     transition: all 0.3s ease-in-out;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: -1px 3px 12px 1px rgba(77,77,77,0.3);
-    background-image: url(https://cdn.pixabay.com/photo/2019/04/15/18/13/bathroom-4130000_1280.jpg);
+    background-image: url(./images/Screen\ Shot\ 2021-05-02\ at\ 5.26.11\ PM.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -189,9 +188,10 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: all 0.3s ease-in-out;
-    height: 19vh;
+    height: auto;
     width: 20vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: -1px 3px 12px 1px rgba(77,77,77,0.3);
@@ -200,15 +200,12 @@ h2 {
 .flex-item:hover {
     transform: scale(1.05, 1.05);
     cursor: pointer;
-  }
-  .flex-item:hover .card-title {
-    color: #1C6EA4;
 }
 
 /* IMAGE BACKGROUNDS */
 
 .flex-item.flex-1 {
-    background: url(https://cdn.pixabay.com/photo/2017/08/08/09/06/search-engine-2610773_1280.jpg);
+    background: url(./images/Screen\ Shot\ 2021-05-02\ at\ 5.44.10\ PM.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,6 +250,7 @@ h2 {
     background: var(--gradient);
     padding: 5%;
     width: 50%;
+    height: auto;
 }
 
 h3 {
@@ -319,12 +317,15 @@ h3 {
     .flex-item {
         width: 95%;
         margin: 1em 0em 1em 0em;
-        height: 15vh;
+        height: auto;
     }
     .left-flex-container {
         width: 95%;
-        height: 20vh;
+        height: auto;
         margin-top: .7rem;
+    }
+    .card-title {
+        margin: 1em;
     }
     br {
         display: none;
@@ -347,7 +348,6 @@ h3 {
   .about-me {
       width: 100%;
       padding: 0em;
-      height: 100vh;
   }
   .about-me p {
       padding-left: 1em;
@@ -359,5 +359,11 @@ h3 {
   .contact-me {
       padding: 1em;
       height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .contact-info {
+      margin-left: auto;
+      margin-right: auto;
   }
 }
